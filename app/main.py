@@ -8,7 +8,7 @@ import pandas as pd
 
 app = FastAPI(title="ML API Clasificación")
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory="app/template")
 
 # Carga tu modelo de clasificación
 model = joblib.load("app/model_clf.pkl")
