@@ -135,3 +135,21 @@ else:
 print("\nMétricas de variabilidad:")
 print(f"Desviación estándar en entrenamiento: {train_std.mean():.4f}")
 print(f"Desviación estándar en validación: {test_std.mean():.4f}")
+
+# ... existing code ...
+
+print("\nMétricas de variabilidad:")
+print(f"Desviación estándar en entrenamiento: {train_std.mean():.4f}")
+print(f"Desviación estándar en validación: {test_std.mean():.4f}")
+
+# Guardar el modelo entrenado
+import joblib
+
+# Guardar el modelo
+joblib.dump(svm_model, 'model_svm.pkl')
+print("\nModelo guardado como 'model_svm.pkl'")
+
+# Guardar el scaler y el selector de características
+joblib.dump(scaler, 'scaler.pkl')
+joblib.dump(selector, 'selector.pkl')
+print("Scaler y selector guardados como 'scaler.pkl' y 'selector.pkl'")
