@@ -14,8 +14,8 @@ df = pd.read_csv('Data/df_final_encoded.csv')
 X = df.drop(['year', 'anxiety_disorders', 'eating_disorders' ,'dalys_depressive_disorders', 'dalys_eating_disorders', 'dalys_anxiety_disorders', 'entity_encoded'], axis=1)
 y = df['dalys_depressive_disorders']
 
-# Discretizar la variable objetivo en categorías
-y_discretized = (y > y.median()).astype(int)
+# Convertir a booleanos usando la mediana como punto de corte
+y_bool = y > y.median()
 
 # Normalizar los datos
 scaler = StandardScaler()
@@ -23,7 +23,7 @@ X_scaled = scaler.fit_transform(X)
 
 # Selección de características
 selector = SelectKBest(f_classif, k=3)
-X_selected = selector.fit_transform(X_scaled, y_discretized)
+X_selected = selector.fit_transform(X_scaled, y_bool)
 
 # Obtener los nombres de las características seleccionadas
 selected_features_mask = selector.get_support()
@@ -44,7 +44,7 @@ svm_model = SVC(
 kfold = KFold(n_splits=10, shuffle=True, random_state=42)
 
 # Realizar validación cruzada
-cv_scores = cross_val_score(svm_model, X_selected, y_discretized, cv=kfold)
+cv_scores = cross_val_score(svm_model, X_selected, y_bool, cv=kfold)
 
 # Imprimir resultados de la validación cruzada
 print("\nResultados de la validación cruzada:")
@@ -52,7 +52,7 @@ print(f"Precisión media: {cv_scores.mean():.4f}")
 print(f"Desviación estándar: {cv_scores.std():.4f}")
 
 # Dividir datos para evaluación final
-X_train, X_test, y_train, y_test = train_test_split(X_selected, y_discretized, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X_selected, y_bool, test_size=0.2, random_state=42)
 
 # Entrenar el modelo final
 svm_model.fit(X_train, y_train)
@@ -69,9 +69,16 @@ print(f"Precisión en entrenamiento: {train_accuracy:.4f}")
 print(f"Precisión en prueba: {test_accuracy:.4f}")
 print(f"Diferencia (overfitting gap): {train_accuracy - test_accuracy:.4f}")
 
+# Imprimir matriz de confusión con etiquetas booleanas
+print("\nMatriz de Confusión:")
+conf_matrix = confusion_matrix(y_test, test_pred)
+print("                  Predicho False  Predicho True")
+print(f"Real False    |      {conf_matrix[0][0]}           {conf_matrix[0][1]}")
+print(f"Real True     |      {conf_matrix[1][0]}           {conf_matrix[1][1]}")
+
 # Calcular y graficar la curva de aprendizaje
 train_sizes, train_scores, test_scores = learning_curve(
-    svm_model, X_selected, y_discretized,
+    svm_model, X_selected, y_bool,
     train_sizes=np.linspace(0.3, 1.0, 10),
     cv=5, n_jobs=-1
 )
