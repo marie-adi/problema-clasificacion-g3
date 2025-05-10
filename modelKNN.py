@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.inspection import permutation_importance
 from sklearn.model_selection import train_test_split, learning_curve, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler, label_binarize
@@ -159,8 +160,6 @@ print(f"Precisión con k={optimal_k}: {accuracy_score(y_test, final_pred)}")
 optimal_k_found = True
 
 # Analizar la importancia de las características
-from sklearn.inspection import permutation_importance
-
 result = permutation_importance(final_knn, X_test_scaled, y_test, n_repeats=10, random_state=42)
 importance = result.importances_mean
 
