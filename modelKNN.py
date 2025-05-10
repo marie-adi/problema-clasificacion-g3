@@ -18,23 +18,9 @@ print(f"Filtrando datos para el año: {latest_year}")
 # Filtrar el DataFrame para incluir solo el año más reciente
 df = df[df['year'] == latest_year]
 
-# Verificar que ahora tenemos aproximadamente 205 países
-print(f"Número total de filas después de filtrar: {len(df)}")
-
 # Crear un mapeo simple donde la clave y el valor son ambos el nombre del país
-try:
-    # Obtener todos los países únicos
-    unique_entities = df['entity'].unique()
-    
-    # Crear un diccionario donde cada país se mapea a sí mismo
-    entity_names = {country: country for country in unique_entities}
-    
-    print(f"Se han mapeado {len(entity_names)} países únicos.")
-except Exception as e:
-    print(f"Error al crear el mapeo de países: {e}")
-    # Usar etiquetas genéricas como fallback
-    unique_entities = df['entity'].unique()
-    entity_names = {country: f"País {i+1}" for i, country in enumerate(unique_entities)}
+entity_names = {country: country for country in df['entity'].unique()}
+print(f"Se han mapeado {len(entity_names)} países únicos.")
 
 # Análisis de depresión por país
 print("\n--- Análisis de depresión por país ---")
@@ -114,8 +100,13 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
 # Crear y entrenar el modelo KNN para clasificación
-knn = KNeighborsClassifier(n_neighbors=5)
-knn.fit(X_train_scaled, y_train)
+try:
+    knn = KNeighborsClassifier(n_neighbors=5)
+    knn.fit(X_train_scaled, y_train)
+    print("Modelo KNN entrenado correctamente")
+except Exception as e:
+    print(f"Error al entrenar el modelo KNN: {e}")
+    exit(1)
 
 # Hacer predicciones
 y_pred = knn.predict(X_test_scaled)
@@ -155,13 +146,6 @@ final_knn = KNeighborsClassifier(n_neighbors=optimal_k)
 final_knn.fit(X_train_scaled, y_train)
 final_pred = final_knn.predict(X_test_scaled)
 print(f"Precisión con k={optimal_k}: {accuracy_score(y_test, final_pred)}")
-
-# Marcar que ya se encontró el k óptimo
-optimal_k_found = True
-
-# Analizar la importancia de las características
-result = permutation_importance(final_knn, X_test_scaled, y_test, n_repeats=10, random_state=42)
-importance = result.importances_mean
 
 # Análisis adicional: Mapa de calor de correlación entre variables
 plt.figure(figsize=(12, 10))
@@ -328,6 +312,3 @@ except Exception as e:
     print(f"\nERROR en la evaluación final: {e}")
     print("No se pudo completar la evaluación detallada del modelo.")
     print("Verifica que todas las métricas se calcularon correctamente en los pasos anteriores.")
-
-# Marcar que ya se realizó la evaluación
-model_evaluation_done = True
