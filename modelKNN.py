@@ -164,23 +164,6 @@ from sklearn.inspection import permutation_importance
 result = permutation_importance(final_knn, X_test_scaled, y_test, n_repeats=10, random_state=42)
 importance = result.importances_mean
 
-# Mostrar la importancia de cada característica
-feature_names = X.columns
-feature_importance = pd.DataFrame({'Feature': feature_names, 'Importance': importance})
-feature_importance = feature_importance.sort_values('Importance', ascending=False)
-
-print("\nImportancia de las características:")
-print(feature_importance)
-
-# Visualizar la importancia de las características
-plt.figure(figsize=(10, 6))
-plt.barh(feature_importance['Feature'], feature_importance['Importance'])
-plt.xlabel('Importancia')
-plt.ylabel('Característica')
-plt.title('Importancia de las características en la predicción')
-plt.tight_layout()
-plt.show()
-
 # Análisis adicional: Mapa de calor de correlación entre variables
 plt.figure(figsize=(12, 10))
 correlation = df[X.columns].corr()
