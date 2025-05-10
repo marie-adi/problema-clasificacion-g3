@@ -10,6 +10,16 @@ from sklearn.multiclass import OneVsRestClassifier
 
 df = pd.read_csv('data/df_final.csv')
 
+# Elegir el año más reciente disponible
+latest_year = df['year'].max()
+print(f"Filtrando datos para el año: {latest_year}")
+
+# Filtrar el DataFrame para incluir solo el año más reciente
+df = df[df['year'] == latest_year]
+
+# Verificar que ahora tenemos aproximadamente 205 países
+print(f"Número total de filas después de filtrar: {len(df)}")
+
 # Crear un mapeo simple donde la clave y el valor son ambos el nombre del país
 try:
     # Obtener todos los países únicos
@@ -28,8 +38,10 @@ except Exception as e:
 # Análisis de depresión por país
 print("\n--- Análisis de depresión por país ---")
 
-# Agrupar por país y calcular estadísticas de depresión
-country_depression = df.groupby('entity')['dalys_depressive_disorders'].agg(['mean', 'min', 'max', 'std']).reset_index()
+# Ya tenemos una fila por país
+country_depression = df.copy()
+country_depression = country_depression[['entity', 'dalys_depressive_disorders']]
+country_depression.rename(columns={'dalys_depressive_disorders': 'mean'}, inplace=True)
 
 # Añadir nombres de países
 country_depression['country_name'] = country_depression['entity'].map(entity_names)
@@ -49,7 +61,7 @@ country_depression = country_depression.sort_values('mean', ascending=False)
 
 # Mostrar los resultados con la columna category incluida
 print("\nNiveles de depresión por país (ordenados de mayor a menor):")
-print(country_depression[['country_name', 'mean', 'min', 'max', 'std', 'category']])
+print(country_depression[['country_name', 'mean', 'category']])
 
 # Visualizar los países con mayor y menor depresión
 plt.figure(figsize=(12, 8))
@@ -68,18 +80,6 @@ sns.barplot(x='mean', y='country_name', hue='country_name', data=bottom_countrie
 plt.title('10 países con menor nivel de depresión')
 plt.xlabel('Nivel medio de DALYS por trastornos depresivos')
 plt.ylabel('País')
-plt.tight_layout()
-plt.show()
-
-# Distribución de categorías de depresión
-plt.figure(figsize=(10, 6))
-category_counts = country_depression['category'].value_counts()
-# Convertir a DataFrame para usar hue
-category_df = pd.DataFrame({'Categoría': category_counts.index, 'Valor': category_counts.values})
-sns.barplot(x='Categoría', y='Valor', hue='Categoría', data=category_df, palette='viridis', legend=False)
-plt.title('Distribución de países por categoría de depresión')
-plt.xlabel('Categoría de depresión')
-plt.ylabel('Número de países')
 plt.tight_layout()
 plt.show()
 
@@ -322,36 +322,30 @@ plt.show()
 
 # 5. Resumen final de la evaluación
 print("\n--- RESUMEN DE EVALUACIÓN DEL MODELO ---")
-print(f"Precisión general: {test_accuracy:.4f}")
-print(f"Precisión con validación cruzada: {cv_scores.mean():.4f}")
-print(f"Diferencia entre entrenamiento y prueba: {gap:.4f}")
 
-# Calcular AUC promedio
-mean_auc = np.mean(list(roc_auc.values()))
-print(f"AUC promedio: {mean_auc:.4f}")
-
-# Evaluación final
-if test_accuracy > 0.8 and gap < 0.1 and mean_auc > 0.8:
-    print("\nEVALUACIÓN FINAL: EXCELENTE. El modelo tiene alta precisión, generaliza bien y discrimina bien entre clases.")
-elif test_accuracy > 0.7 and gap < 0.15 and mean_auc > 0.7:
-    print("\nEVALUACIÓN FINAL: BUENO. El modelo tiene precisión aceptable con ligero overfitting.")
-elif test_accuracy > 0.6 and gap < 0.2:
-    print("\nEVALUACIÓN FINAL: ACEPTABLE. El modelo funciona mejor que el azar pero tiene margen de mejora.")
-else:
-    print("\nEVALUACIÓN FINAL: DEFICIENTE. El modelo necesita mejoras significativas o reconsiderar el enfoque.")
-
-# 6. Sugerencias de mejora
-print("\n--- SUGERENCIAS DE MEJORA ---")
-if gap > 0.1:
-    print("- Reducir overfitting: Disminuir el número de vecinos o aplicar técnicas de regularización.")
-if test_accuracy < 0.7:
-    print("- Mejorar precisión general: Considerar características adicionales o transformaciones de datos.")
-if cv_scores.std() > 0.1:
-    print("- Reducir variabilidad: El modelo es sensible a la partición de datos. Considerar más datos o técnicas de ensamblaje.")
-if mean_auc < 0.7:
-    print("- Mejorar discriminación: El modelo tiene dificultades para distinguir entre clases. Considerar balancear clases o usar pesos.")
-
-print("\nRecuerda que estos umbrales son orientativos y deben ajustarse según el contexto específico del problema.")
+try:
+    print(f"Precisión general: {test_accuracy:.4f}")
+    print(f"Precisión con validación cruzada: {cv_scores.mean():.4f}")
+    print(f"Diferencia entre entrenamiento y prueba: {gap:.4f}")
+    
+    # Calcular AUC promedio
+    mean_auc = np.mean(list(roc_auc.values()))
+    print(f"AUC promedio: {mean_auc:.4f}")
+    
+    # Evaluación final
+    if test_accuracy > 0.8 and gap < 0.1 and mean_auc > 0.8:
+        print("\nEVALUACIÓN FINAL: EXCELENTE. El modelo tiene alta precisión, generaliza bien y discrimina bien entre clases.")
+    elif test_accuracy > 0.7 and gap < 0.15 and mean_auc > 0.7:
+        print("\nEVALUACIÓN FINAL: BUENO. El modelo tiene precisión aceptable con ligero overfitting.")
+    elif test_accuracy > 0.6 and gap < 0.2:
+        print("\nEVALUACIÓN FINAL: ACEPTABLE. El modelo funciona mejor que el azar pero tiene margen de mejora.")
+    else:
+        print("\nEVALUACIÓN FINAL: DEFICIENTE. El modelo necesita mejoras significativas o reconsiderar el enfoque.")
+    
+except Exception as e:
+    print(f"\nERROR en la evaluación final: {e}")
+    print("No se pudo completar la evaluación detallada del modelo.")
+    print("Verifica que todas las métricas se calcularon correctamente en los pasos anteriores.")
 
 # Marcar que ya se realizó la evaluación
 model_evaluation_done = True
