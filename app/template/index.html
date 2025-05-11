@@ -3,30 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Predicción de Alta Carga de DALYs Depresión</title>
+  <script src="/static/main.js"></script>
+  <title>Predicción del Nivel de Depresión por País</title>
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>¿Alta carga de DALYs de depresión?</h1>
-    <form action="/predict" method="post">
-      <label for="schizophrenia_disorders">Schizophrenia Disorders:</label>
-      <input type="number" step="any" name="schizophrenia_disorders" id="schizophrenia_disorders" required />
-
-      <label for="depressive_disorders">Depressive Disorders:</label>
-      <input type="number" step="any" name="depressive_disorders" id="depressive_disorders" required />
-
-      <label for="bipolar_disorders">Bipolar Disorders:</label>
-      <input type="number" step="any" name="bipolar_disorders" id="bipolar_disorders" required />
-
-      <label for="anxiety_disorders">Anxiety Disorders:</label>
-      <input type="number" step="any" name="anxiety_disorders" id="anxiety_disorders" required />
-
-      <label for="eating_disorders">Eating Disorders:</label>
-      <input type="number" step="any" name="eating_disorders" id="eating_disorders" required />
-
-      <button type="submit">Predecir</button>
-    </form>
+    <h1>Clasificación de Países por nivel de Depresión</h1>
+       <form action="/predict" method="post">
+            <label for="country">Nombre del país</label>
+            <input type="text" name="country" placeholder="Ej: Argentina" required>
+            <button type="submit">Predecir</button>
+        </form>
   </div>
 </body>
 </html>
