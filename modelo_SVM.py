@@ -8,12 +8,20 @@ import numpy as np
 import pickle
 
 # Cargar los datos
-df = pd.read_csv('Data/df_final_encoded.csv')
+df = pd.read_csv('Data/df_final.csv')
+
+# Filtrar solo los datos del 2019
+df = df[df['year'] == 2019].copy()
 
 # Separar features (X) y variable objetivo (y)
 X = df.drop(['year', 'anxiety_disorders', 'eating_disorders', 
-             'dalys_eating_disorders', 'dalys_anxiety_disorders', 'entity_encoded'], axis=1)
-y = df['entity_encoded']
+             'dalys_eating_disorders', 'dalys_anxiety_disorders', 'entity'], axis=1)
+
+# Calcular el percentil 75 para una clasificación más estricta
+umbral = df['depressive_disorders'].quantile(0.60)
+
+# Convertir la variable objetivo a binaria (0 o 1) usando el percentil 75
+y = (df['depressive_disorders'] > umbral).astype(int)
 
 # Escalar los datos
 scaler = StandardScaler()
@@ -64,6 +72,46 @@ print(classification_report(y_test, y_pred))
 precision = accuracy_score(y_test, y_pred)
 print(f"\nPrecisión del modelo mejorado: {precision:.4f}")
 
+# Evaluar el modelo mejorado
+print("\nResultados con el modelo mejorado:")
+print("Reporte de Clasificación:")
+print(classification_report(y_test, y_pred, target_names=['Bajo riesgo', 'Alto riesgo']))
+
+precision = accuracy_score(y_test, y_pred)
+print(f"\nPrecisión del modelo: {precision:.2f}")
+
+# Crear un diccionario de resultados
+resultados_binarios = {}
+for idx, row in df.iterrows():
+    valor_depresion = row['depressive_disorders']
+    prediccion = y[idx]
+    resultados_binarios[row['entity']] = {
+        'riesgo_binario': int(prediccion),
+        'categoria': 'Alto riesgo' if prediccion == 1 else 'Bajo riesgo',
+        'valor_depresion': float(valor_depresion),
+        'año': 2019
+    }
+
+# Análisis de resultados
+total_paises = len(resultados_binarios)
+paises_alto_riesgo = sum(1 for pais in resultados_binarios.values() if pais['riesgo_binario'] == 1)
+paises_bajo_riesgo = sum(1 for pais in resultados_binarios.values() if pais['riesgo_binario'] == 0)
+
+print("\nAnálisis de países:")
+print(f"Total de países procesados: {total_paises}")
+print(f"Países con alto riesgo: {paises_alto_riesgo}")
+print(f"Países con bajo riesgo: {paises_bajo_riesgo}")
+
+# Guardar resultados binarios en JSON
+import json
+import os
+
+os.makedirs('resultados', exist_ok=True)
+output_file = 'resultados/predicciones_binarias.json'
+with open(output_file, 'w', encoding='utf-8') as f:
+    json.dump(resultados_binarios, f, indent=4, ensure_ascii=False)
+
+print(f"\nPredicciones binarias guardadas en: {output_file}")
 
 # Calcular el overfitting
 train_score = best_model.score(X_train, y_train)
