@@ -42,9 +42,9 @@ async def predict(request: Request, entity: str = Form(...)):
     pred = model.predict(X_new)[0]
 
     # Decodificación usando if/else en lugar de diccionario
-    if pred == 1:
+    if pred == 0:
         resultado = "No presenta niveles significativos de depresión"
-    elif pred == 0:
+    elif pred == 1:
         resultado = "Presenta niveles significativos de depresión"
     else:
         resultado = f"Predicción desconocida (valor: {pred})"
