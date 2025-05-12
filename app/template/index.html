@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <script src="/static/main.js"></script>
-  <title>Predicción del Nivel de Depresión por País</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicción de Depresión</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="brain-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M12 2c2.21 0 4 1.79 4 4 0 .88-.29 1.69-.78 2.35 1.62.89 2.78 2.62 2.78 4.65 0 1.93-1.04 3.63-2.6 4.56.19.63.6 1.23 1.2 1.44 1.2.4 2.4-.4 2.4-1.6 0-.8-.6-1.4-1.4-1.4v-2c1.6 0 3.4 1.4 3.4 3.4 0 2.8-2.6 4.8-5.4 3.6-1-.4-1.8-1.2-2.2-2.2-.4-.8-1.2-1.4-2.18-1.4-.98 0-1.8.6-2.2 1.4-.4 1-1.2 1.8-2.2 2.2-2.8 1.2-5.4-.8-5.4-3.6 0-2 1.8-3.4 3.4-3.4v2c-.8 0-1.4.6-1.4 1.4 0 1.2 1.2 2 2.4 1.6.6-.2 1-1 1.2-1.44-1.56-.93-2.6-2.63-2.6-4.56 0-2.03 1.16-3.76 2.78-4.65C8.29 7.69 8 6.88 8 6c0-2.21 1.79-4 4-4m0-2C8.69 0 6 2.69 6 6c0 .24.04.47.09.7C4.04 8.1 2 11.17 2 14c0 1.35.41 2.65 1.17 3.74C2.28 18.48 1 20.1 1 22c0 2.77 2.23 5 5 5 1.5 0 2.9-.67 3.84-1.75.26.1.53.14.8.14.27 0 .54-.04.8-.14C12.38 26.33 13.74 27 15.2 27c2.77 0 5-2.23 5-5 0-1.9-1.28-3.52-3.17-4.26C17.59 16.65 18 15.35 18 14c0-2.83-2.04-5.9-6.09-7.3.05-.23.09-.46.09-.7 0-3.31-2.69-6-6-6z"/>
-            </svg>
-        </div>
-        <h1>Clasificación de Países por nivel de Depresión</h1>
-        <form id="prediction-form">
-            <label for="country">Nombre del país</label>
-            <input type="text" id="country" name="country" placeholder="Ej: Argentina" required>
-            <button type="submit">Predecir</button>
-        </form>
-        <div class="waves"></div>
+  <div class="container">
+    <!-- Ícono cerebral -->
+    <div class="brain-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12,2C8.1,2,5,5.1,5,9c0,2.1,1,4,2.6,5.2C7.2,15.1,7,16.5,7,18c0,3.9,3.1,7,7,7s7-3.1,7-7c0-1.5-0.2-2.9-0.6-4.2C18,13,19,11.1,19,9C19,5.1,15.9,2,12,2z" fill="var(--primary-color)"/>
+      </svg>
     </div>
-    
-    <script>
-        document.getElementById('prediction-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Aquí iría la lógica para la predicción
-            console.log('Prediciendo para el país:', document.getElementById('country').value);
-        });
-    </script>
+
+    <h1>Predicción de Depresión 2019</h1>
+
+    <form action="/predict" method="post">
+      <label for="entity">Nombre del país</label>
+      <input list="paises" id="entity" name="entity" type="text" placeholder="Ej: Argentina" required>
+      <datalist id="paises">
+        {% for p in paises %}
+          <option value="{{ p }}">
+        {% endfor %}
+      </datalist>
+
+      <button type="submit">Predecir</button>
+    </form>
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if resultado %}
+      <div class="result">
+        <p><strong>Resultado:</strong> {{ resultado }}</p>
+        {% if probabilidad %}
+          <p><strong>Probabilidad:</strong> {{ probabilidad }}</p>
+        {% endif %}
+        <p><strong>Valor real 2019:</strong> {{ valor_real }}</p>
+      </div>
+    {% endif %}
+
+    <div class="waves"></div>
+  </div>
+
+  <script src="/static/main.js"></script>
 </body>
 </html>

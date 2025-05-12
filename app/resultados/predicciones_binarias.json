@@ -1,0 +1,1232 @@
+{
+    "Afghanistan": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.945168,
+        "año": 2019
+    },
+    "Albania": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.4602032,
+        "año": 2019
+    },
+    "Algeria": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.1296806,
+        "año": 2019
+    },
+    "American Samoa": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.659042,
+        "año": 2019
+    },
+    "Andorra": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6072073,
+        "año": 2019
+    },
+    "Angola": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.7441936,
+        "año": 2019
+    },
+    "Antigua and Barbuda": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0286796,
+        "año": 2019
+    },
+    "Argentina": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.4075098,
+        "año": 2019
+    },
+    "Armenia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.9836516,
+        "año": 2019
+    },
+    "Australia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.382458,
+        "año": 2019
+    },
+    "Austria": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.125201,
+        "año": 2019
+    },
+    "Azerbaijan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.7526312,
+        "año": 2019
+    },
+    "Bahamas": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0623364,
+        "año": 2019
+    },
+    "Bahrain": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.5280886,
+        "año": 2019
+    },
+    "Bangladesh": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.6198096,
+        "año": 2019
+    },
+    "Barbados": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1782775,
+        "año": 2019
+    },
+    "Belarus": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.824539,
+        "año": 2019
+    },
+    "Belgium": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.5420222,
+        "año": 2019
+    },
+    "Belize": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.309065,
+        "año": 2019
+    },
+    "Benin": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.447893,
+        "año": 2019
+    },
+    "Bermuda": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.177548,
+        "año": 2019
+    },
+    "Bhutan": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.024815,
+        "año": 2019
+    },
+    "Bolivia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3994322,
+        "año": 2019
+    },
+    "Bosnia and Herzegovina": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.7624497,
+        "año": 2019
+    },
+    "Botswana": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.2572603,
+        "año": 2019
+    },
+    "Brazil": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.8015563,
+        "año": 2019
+    },
+    "Brunei": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 1.6031243,
+        "año": 2019
+    },
+    "Bulgaria": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.6916606,
+        "año": 2019
+    },
+    "Burkina Faso": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.378302,
+        "año": 2019
+    },
+    "Burundi": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.705153,
+        "año": 2019
+    },
+    "Cambodia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.9500995,
+        "año": 2019
+    },
+    "Cameroon": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.6046395,
+        "año": 2019
+    },
+    "Canada": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.2904658,
+        "año": 2019
+    },
+    "Cape Verde": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.8429317,
+        "año": 2019
+    },
+    "Central African Republic": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.9238467,
+        "año": 2019
+    },
+    "Chad": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.1334114,
+        "año": 2019
+    },
+    "Chile": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6435125,
+        "año": 2019
+    },
+    "China": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.7240157,
+        "año": 2019
+    },
+    "Colombia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.2196279,
+        "año": 2019
+    },
+    "Comoros": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.2631598,
+        "año": 2019
+    },
+    "Congo": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.5257406,
+        "año": 2019
+    },
+    "Cook Islands": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1608856,
+        "año": 2019
+    },
+    "Costa Rica": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.2132857,
+        "año": 2019
+    },
+    "Cote d'Ivoire": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9350774,
+        "año": 2019
+    },
+    "Croatia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0076077,
+        "año": 2019
+    },
+    "Cuba": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.802294,
+        "año": 2019
+    },
+    "Cyprus": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1127021,
+        "año": 2019
+    },
+    "Czechia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.878852,
+        "año": 2019
+    },
+    "Democratic Republic of Congo": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.44306,
+        "año": 2019
+    },
+    "Denmark": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.4828994,
+        "año": 2019
+    },
+    "Djibouti": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.4612656,
+        "año": 2019
+    },
+    "Dominica": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0847688,
+        "año": 2019
+    },
+    "Dominican Republic": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.8231027,
+        "año": 2019
+    },
+    "East Timor": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.804642,
+        "año": 2019
+    },
+    "Ecuador": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3306973,
+        "año": 2019
+    },
+    "Egypt": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9397578,
+        "año": 2019
+    },
+    "El Salvador": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.4073691,
+        "año": 2019
+    },
+    "Equatorial Guinea": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.728945,
+        "año": 2019
+    },
+    "Eritrea": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.841218,
+        "año": 2019
+    },
+    "Estonia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6936426,
+        "año": 2019
+    },
+    "Eswatini": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.4255295,
+        "año": 2019
+    },
+    "Ethiopia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.64972,
+        "año": 2019
+    },
+    "Fiji": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.917755,
+        "año": 2019
+    },
+    "Finland": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.139295,
+        "año": 2019
+    },
+    "France": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.835741,
+        "año": 2019
+    },
+    "Gabon": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.5459714,
+        "año": 2019
+    },
+    "Gambia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.5018787,
+        "año": 2019
+    },
+    "Georgia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3233132,
+        "año": 2019
+    },
+    "Germany": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3767943,
+        "año": 2019
+    },
+    "Ghana": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.3620286,
+        "año": 2019
+    },
+    "Greece": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.0422506,
+        "año": 2019
+    },
+    "Greenland": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.835712,
+        "año": 2019
+    },
+    "Grenada": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.23476,
+        "año": 2019
+    },
+    "Guam": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1972318,
+        "año": 2019
+    },
+    "Guatemala": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6679313,
+        "año": 2019
+    },
+    "Guinea": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.3731165,
+        "año": 2019
+    },
+    "Guinea-Bissau": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.4942803,
+        "año": 2019
+    },
+    "Guyana": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.927692,
+        "año": 2019
+    },
+    "Haiti": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6351175,
+        "año": 2019
+    },
+    "Honduras": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1551142,
+        "año": 2019
+    },
+    "Hungary": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.8233702,
+        "año": 2019
+    },
+    "Iceland": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.9365938,
+        "año": 2019
+    },
+    "India": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6598387,
+        "año": 2019
+    },
+    "Indonesia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.4184713,
+        "año": 2019
+    },
+    "Iran": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.860692,
+        "año": 2019
+    },
+    "Iraq": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9326482,
+        "año": 2019
+    },
+    "Ireland": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.2169313,
+        "año": 2019
+    },
+    "Israel": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.127255,
+        "año": 2019
+    },
+    "Italy": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.561658,
+        "año": 2019
+    },
+    "Jamaica": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0646706,
+        "año": 2019
+    },
+    "Japan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.1032803,
+        "año": 2019
+    },
+    "Jordan": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.15211,
+        "año": 2019
+    },
+    "Kazakhstan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.4412057,
+        "año": 2019
+    },
+    "Kenya": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.723163,
+        "año": 2019
+    },
+    "Kiribati": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.9703078,
+        "año": 2019
+    },
+    "Kuwait": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.0603004,
+        "año": 2019
+    },
+    "Kyrgyzstan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3816984,
+        "año": 2019
+    },
+    "Laos": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.7468913,
+        "año": 2019
+    },
+    "Latvia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.7478287,
+        "año": 2019
+    },
+    "Lebanon": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.652712,
+        "año": 2019
+    },
+    "Lesotho": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.511564,
+        "año": 2019
+    },
+    "Liberia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.556289,
+        "año": 2019
+    },
+    "Libya": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.406427,
+        "año": 2019
+    },
+    "Lithuania": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9911947,
+        "año": 2019
+    },
+    "Luxembourg": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.2193074,
+        "año": 2019
+    },
+    "Madagascar": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.737187,
+        "año": 2019
+    },
+    "Malawi": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.100136,
+        "año": 2019
+    },
+    "Malaysia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6630948,
+        "año": 2019
+    },
+    "Maldives": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.9122725,
+        "año": 2019
+    },
+    "Mali": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.5413845,
+        "año": 2019
+    },
+    "Malta": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1311812,
+        "año": 2019
+    },
+    "Marshall Islands": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.8873966,
+        "año": 2019
+    },
+    "Mauritania": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6558447,
+        "año": 2019
+    },
+    "Mauritius": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.8047628,
+        "año": 2019
+    },
+    "Mexico": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.5358298,
+        "año": 2019
+    },
+    "Micronesia (country)": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.909947,
+        "año": 2019
+    },
+    "Moldova": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.22074,
+        "año": 2019
+    },
+    "Monaco": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.0564504,
+        "año": 2019
+    },
+    "Mongolia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9632094,
+        "año": 2019
+    },
+    "Montenegro": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.8178656,
+        "año": 2019
+    },
+    "Morocco": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.07854,
+        "año": 2019
+    },
+    "Mozambique": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.992671,
+        "año": 2019
+    },
+    "Myanmar": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.1933033,
+        "año": 2019
+    },
+    "Namibia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6164615,
+        "año": 2019
+    },
+    "Nauru": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1496468,
+        "año": 2019
+    },
+    "Nepal": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.8975983,
+        "año": 2019
+    },
+    "Netherlands": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.5344012,
+        "año": 2019
+    },
+    "New Zealand": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.7238638,
+        "año": 2019
+    },
+    "Nicaragua": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.2548654,
+        "año": 2019
+    },
+    "Niger": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.235215,
+        "año": 2019
+    },
+    "Nigeria": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.8173978,
+        "año": 2019
+    },
+    "Niue": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1407,
+        "año": 2019
+    },
+    "North Korea": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.6769247,
+        "año": 2019
+    },
+    "North Macedonia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.570906,
+        "año": 2019
+    },
+    "Northern Mariana Islands": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.780081,
+        "año": 2019
+    },
+    "Norway": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.2382026,
+        "año": 2019
+    },
+    "Oman": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.962998,
+        "año": 2019
+    },
+    "Pakistan": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9425256,
+        "año": 2019
+    },
+    "Palau": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.089023,
+        "año": 2019
+    },
+    "Palestine": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 6.1989517,
+        "año": 2019
+    },
+    "Panama": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.9369144,
+        "año": 2019
+    },
+    "Papua New Guinea": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.072686,
+        "año": 2019
+    },
+    "Paraguay": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.6945765,
+        "año": 2019
+    },
+    "Peru": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.2116694,
+        "año": 2019
+    },
+    "Philippines": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.779254,
+        "año": 2019
+    },
+    "Poland": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.2779574,
+        "año": 2019
+    },
+    "Portugal": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.3940663,
+        "año": 2019
+    },
+    "Puerto Rico": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.8828056,
+        "año": 2019
+    },
+    "Qatar": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9513783,
+        "año": 2019
+    },
+    "Romania": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.6501622,
+        "año": 2019
+    },
+    "Russia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0799155,
+        "año": 2019
+    },
+    "Rwanda": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.0970206,
+        "año": 2019
+    },
+    "Saint Kitts and Nevis": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9269922,
+        "año": 2019
+    },
+    "Saint Lucia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3162744,
+        "año": 2019
+    },
+    "Saint Vincent and the Grenadines": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3676143,
+        "año": 2019
+    },
+    "Samoa": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.8027563,
+        "año": 2019
+    },
+    "San Marino": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.0918827,
+        "año": 2019
+    },
+    "Sao Tome and Principe": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.7094643,
+        "año": 2019
+    },
+    "Saudi Arabia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.216069,
+        "año": 2019
+    },
+    "Senegal": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.0294,
+        "año": 2019
+    },
+    "Serbia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.814907,
+        "año": 2019
+    },
+    "Seychelles": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.644615,
+        "año": 2019
+    },
+    "Sierra Leone": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.392157,
+        "año": 2019
+    },
+    "Singapore": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.0081315,
+        "año": 2019
+    },
+    "Slovakia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.695262,
+        "año": 2019
+    },
+    "Slovenia": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1152232,
+        "año": 2019
+    },
+    "Solomon Islands": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0039446,
+        "año": 2019
+    },
+    "Somalia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.84665,
+        "año": 2019
+    },
+    "South Africa": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.298678,
+        "año": 2019
+    },
+    "South Korea": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.091181,
+        "año": 2019
+    },
+    "South Sudan": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.749942,
+        "año": 2019
+    },
+    "Spain": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.704455,
+        "año": 2019
+    },
+    "Sri Lanka": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.8662298,
+        "año": 2019
+    },
+    "Sudan": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.4230967,
+        "año": 2019
+    },
+    "Suriname": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.6881685,
+        "año": 2019
+    },
+    "Sweden": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.116486,
+        "año": 2019
+    },
+    "Switzerland": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.705447,
+        "año": 2019
+    },
+    "Syria": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.132855,
+        "año": 2019
+    },
+    "Taiwan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.564065,
+        "año": 2019
+    },
+    "Tajikistan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.8172803,
+        "año": 2019
+    },
+    "Tanzania": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.651242,
+        "año": 2019
+    },
+    "Thailand": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.847038,
+        "año": 2019
+    },
+    "Togo": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.5008154,
+        "año": 2019
+    },
+    "Tokelau": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1222134,
+        "año": 2019
+    },
+    "Tonga": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.6947968,
+        "año": 2019
+    },
+    "Trinidad and Tobago": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.82637,
+        "año": 2019
+    },
+    "Tunisia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 5.049405,
+        "año": 2019
+    },
+    "Turkey": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 3.9422681,
+        "año": 2019
+    },
+    "Turkmenistan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.0497415,
+        "año": 2019
+    },
+    "Tuvalu": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.1250875,
+        "año": 2019
+    },
+    "Uganda": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 6.5845194,
+        "año": 2019
+    },
+    "Ukraine": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.8973033,
+        "año": 2019
+    },
+    "United Arab Emirates": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.5784907,
+        "año": 2019
+    },
+    "United Kingdom": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.0975676,
+        "año": 2019
+    },
+    "United States": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.375998,
+        "año": 2019
+    },
+    "United States Virgin Islands": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3567483,
+        "año": 2019
+    },
+    "Uruguay": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.840908,
+        "año": 2019
+    },
+    "Uzbekistan": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.164448,
+        "año": 2019
+    },
+    "Vanuatu": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.9744234,
+        "año": 2019
+    },
+    "Venezuela": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.2147944,
+        "año": 2019
+    },
+    "Vietnam": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 2.473061,
+        "año": 2019
+    },
+    "World": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.4400527,
+        "año": 2019
+    },
+    "Yemen": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.8953676,
+        "año": 2019
+    },
+    "Zambia": {
+        "riesgo_binario": 1,
+        "categoria": "Alto riesgo",
+        "valor_depresion": 4.2194896,
+        "año": 2019
+    },
+    "Zimbabwe": {
+        "riesgo_binario": 0,
+        "categoria": "Bajo riesgo",
+        "valor_depresion": 3.3954756,
+        "año": 2019
+    }
+}
