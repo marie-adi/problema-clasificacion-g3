@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Predicción de Alta Carga de DALYs Depresión</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicción de Depresión</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
   <div class="container">
-    <h1>¿Alta carga de DALYs de depresión?</h1>
+    <!-- Ícono cerebral -->
+    <div class="brain-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12,2C8.1,2,5,5.1,5,9c0,2.1,1,4,2.6,5.2C7.2,15.1,7,16.5,7,18c0,3.9,3.1,7,7,7s7-3.1,7-7c0-1.5-0.2-2.9-0.6-4.2C18,13,19,11.1,19,9C19,5.1,15.9,2,12,2z" fill="var(--primary-color)"/>
+      </svg>
+    </div>
+
+    <h1>Predicción de Depresión 2019</h1>
+
     <form action="/predict" method="post">
-      <label for="schizophrenia_disorders">Schizophrenia Disorders:</label>
-      <input type="number" step="any" name="schizophrenia_disorders" id="schizophrenia_disorders" required />
-
-      <label for="depressive_disorders">Depressive Disorders:</label>
-      <input type="number" step="any" name="depressive_disorders" id="depressive_disorders" required />
-
-      <label for="bipolar_disorders">Bipolar Disorders:</label>
-      <input type="number" step="any" name="bipolar_disorders" id="bipolar_disorders" required />
-
-      <label for="anxiety_disorders">Anxiety Disorders:</label>
-      <input type="number" step="any" name="anxiety_disorders" id="anxiety_disorders" required />
-
-      <label for="eating_disorders">Eating Disorders:</label>
-      <input type="number" step="any" name="eating_disorders" id="eating_disorders" required />
+      <label for="entity">Nombre del país</label>
+      <input list="paises" id="entity" name="entity" type="text" placeholder="Ej: Argentina" required>
+      <datalist id="paises">
+        {% for p in paises %}
+          <option value="{{ p }}">
+        {% endfor %}
+      </datalist>
 
       <button type="submit">Predecir</button>
     </form>
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if resultado %}
+      <div class="result">
+        <p><strong>Resultado:</strong> {{ resultado }}</p>
+        {% if probabilidad %}
+          <p><strong>Probabilidad:</strong> {{ probabilidad }}</p>
+        {% endif %}
+        <p><strong>Valor real 2019:</strong> {{ valor_real }}</p>
+      </div>
+    {% endif %}
+
+    <div class="waves"></div>
   </div>
+
+  <script src="/static/main.js"></script>
 </body>
 </html>

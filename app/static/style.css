@@ -1,98 +1,175 @@
 /* static/style.css */
 
+:root {
+      --primary-color: #5B7DB1;
+      --secondary-color: #A3C4F3;
+      --accent-color: #7F63B8;
+      --text-color: #2D3748;
+      --light-bg: #F7FAFC;
+      --input-bg: #EDF2F7;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --gradient: linear-gradient(135deg, #A3C4F3 0%, #7F63B8 100%);
+      }
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f9;
-    color: #333;
-    line-height: 1.6;
-    padding: 2rem;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: #2c3e50;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Logo de fondo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/static/images/fondoT.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 52%;
+    z-index: -1;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 500px;
     text-align: center;
-  }
-  
-  form label {
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--gradient);
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #35495e;
-  }
-  
-  form input[type="number"] {
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: left;
+}
+
+input[type="text"] {
     width: 100%;
-    padding: 0.6rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccd0d5;
-    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #CBD5E0;
+    border-radius: 8px;
+    background-color: var(--input-bg);
     font-size: 1rem;
-  }
-  
-  form button {
-    display: block;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(127, 99, 184, 0.2);
+}
+
+input[type="text"]::placeholder {
+    color: #A0AEC0;
+}
+
+button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #3498db;
-    color: #fff;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  form button:hover {
-    background-color: #2980b9;
-  }
-  
-  p {
-    margin: 1rem 0;
-    font-size: 1.1rem;
-  }
-  
-  a {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 600px) {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(91, 125, 177, 0.3);
+}
+
+button:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(127, 99, 184, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Elementos decorativos */
+.brain-icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.brain-icon svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--primary-color);
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        -45deg,
+        var(--secondary-color),
+        var(--secondary-color) 5px,
+        transparent 5px,
+        transparent 10px
+    );
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
     .container {
-      padding: 1rem;
+        padding: 2rem 1.5rem;
     }
     
     h1 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-    
-    form button {
-      font-size: 0.9rem;
-      padding: 0.6rem;
-    }
-  }
-  
+}
