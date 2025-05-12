@@ -13,8 +13,8 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/template")
 
 # Carga del modelo y del CSV al iniciar la aplicación
-model = joblib.load("/home/abby/problema-clasificacion-g3/app/modelo_svm.pkl")
-df = pd.read_csv("/home/abby/problema-clasificacion-g3/Data/df_final.csv")
+model = joblib.load("app/modelo_svm.pkl")
+df = pd.read_csv("Data/df_final.csv")
 df_2019 = df[df['year'] == 2019].copy()
 
 @app.get("/", response_class=HTMLResponse)
