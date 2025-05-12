@@ -8,7 +8,7 @@ import numpy as np
 import pickle
 
 # Cargar los datos
-df = pd.read_csv('Data/df_final.csv')
+df = pd.read_csv('../Data/df_final.csv')
 
 # Filtrar solo los datos del 2019
 df = df[df['year'] == 2019].copy()
