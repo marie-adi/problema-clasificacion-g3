@@ -11,7 +11,7 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 templates = Jinja2Templates(directory="app/template")
 
 # Carga tu modelo de clasificación
-model = joblib.load("app/model_clf.pkl")
+model = joblib.load("app/modelo_svm.pkl")
 
 @app.get("/", response_class=HTMLResponse)
 async def form(request: Request):
@@ -20,28 +20,22 @@ async def form(request: Request):
 @app.post("/predict", response_class=HTMLResponse)
 async def predict(
     request: Request,
-    schizophrenia_disorders: float = Form(...),
-    depressive_disorders: float = Form(...),
-    bipolar_disorders: float = Form(...),
-    anxiety_disorders: float = Form(...),
-    eating_disorders: float = Form(...),
+    entity: str = Form(...),
+
 ):
     # 1) Crear DataFrame de una fila
     X_new = pd.DataFrame([{
-        "schizophrenia_disorders": schizophrenia_disorders,
-        "depressive_disorders":    depressive_disorders,
-        "bipolar_disorders":       bipolar_disorders,
-        "anxiety_disorders":       anxiety_disorders,
-        "eating_disorders":        eating_disorders,
+        "entity": entity,
+       
     }])
     # 2) Predecir probabilidad y etiqueta
-    prob = model.predict_proba(X_new)[0,1]
     pred = model.predict(X_new)[0]
     resultado = "Sí" if pred == 1 else "No"
+    print("-------------",resultado)
 
     # 3) Devolver template con resultado y probabilidad
-    return templates.TemplateResponse("result.html", {
+    return templates.TemplateResponse("index.html", {
         "request": request,
         "resultado": resultado,
-        "probabilidad": f"{prob:.2%}"
+        "probabilidad": f"{pred:.2%}"
     })
