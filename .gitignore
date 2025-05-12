@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.qodo
 # Environments
 .env
@@ -7,3 +8,5 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+=======
+>>>>>>> 6efdc7ab3e5414a7250cfdc85ae71c3625f48d9b
