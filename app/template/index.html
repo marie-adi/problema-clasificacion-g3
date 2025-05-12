@@ -15,20 +15,14 @@
             </svg>
         </div>
         <h1>Clasificación de Países por nivel de Depresión</h1>
-        <form id="prediction-form">
+        <form action="/predict" method="post" id="prediction-form">
             <label for="country">Nombre del país</label>
             <input type="text" id="country" name="country" placeholder="Ej: Argentina" required>
             <button type="submit">Predecir</button>
         </form>
         <div class="waves"></div>
+        <div id="prediction-results"></div>
     </div>
-    
-    <script>
-        document.getElementById('prediction-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Aquí iría la lógica para la predicción
-            console.log('Prediciendo para el país:', document.getElementById('country').value);
-        });
-    </script>
+
 </body>
 </html>

@@ -1,0 +1,822 @@
+[
+    {
+        "country": "Uganda",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Palestine",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Greenland",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Central African Republic",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Angola",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Equatorial Guinea",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Gabon",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Congo",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Gambia",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Democratic Republic of Congo",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Lesotho",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Morocco",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Tunisia",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Greece",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Guyana",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Chad",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Rwanda",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Yemen",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Iran",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Afghanistan",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Nepal",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Suriname",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Mozambique",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Cape Verde",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Spain",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Somalia",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Lebanon",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Eritrea",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Madagascar",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Bahrain",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Bangladesh",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Kenya",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "South Sudan",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Burundi",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Ethiopia",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Cameroon",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Tanzania",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Australia",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Sudan",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Libya",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Portugal",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Liberia",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Togo",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Guinea-Bissau",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "United States",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Benin",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Djibouti",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Sierra Leone",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Burkina Faso",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Guinea",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Ghana",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Eswatini",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Ireland",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Saudi Arabia",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Jordan",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Algeria",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Israel",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "South Africa",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Syria",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Niger",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Sweden",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "San Marino",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Comoros",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Kuwait",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Finland",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Botswana",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "United Kingdom",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Monaco",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "depression_category": "Alto"
+    },
+    {
+        "country": "Zambia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Qatar",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Oman",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Lithuania",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Mongolia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Bhutan",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Egypt",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Turkey",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Dominican Republic",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Iraq",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Brazil",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Cuba",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Malawi",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Ukraine",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Senegal",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Pakistan",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Chile",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "France",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Belarus",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Cote d'Ivoire",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Paraguay",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Guatemala",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "New Zealand",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Latvia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Haiti",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Estonia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Nigeria",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Mauritius",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Switzerland",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Mexico",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "United Arab Emirates",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Andorra",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Sao Tome and Principe",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Italy",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Belgium",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Netherlands",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "India",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Malaysia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Mauritania",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "El Salvador",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Bolivia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Denmark",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Saint Vincent and the Grenadines",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "United States Virgin Islands",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Namibia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Ecuador",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Kazakhstan",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Belize",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Germany",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Mali",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Saint Lucia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Kyrgyzstan",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "World",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Nicaragua",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Costa Rica",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Venezuela",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Grenada",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Georgia",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Bermuda",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Barbados",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Canada",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Honduras",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Norway",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Zimbabwe",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Luxembourg",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Moldova",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Dominica",
+        "depression_category": "Medio"
+    },
+    {
+        "country": "Jamaica",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Bahamas",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Uzbekistan",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Malta",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Austria",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Cyprus",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Slovenia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Guam",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Russia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Panama",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Turkmenistan",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Uruguay",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Cook Islands",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Nauru",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Croatia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Niue",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Tuvalu",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Tokelau",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Puerto Rico",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Armenia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Palau",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Iceland",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Papua New Guinea",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Czechia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Solomon Islands",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Vanuatu",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Maldives",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Tajikistan",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Montenegro",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Hungary",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Kiribati",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Serbia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Cambodia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Fiji",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Micronesia (country)",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Azerbaijan",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Marshall Islands",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Sri Lanka",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Thailand",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Slovakia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Bulgaria",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Argentina",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Samoa",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "East Timor",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Northern Mariana Islands",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Philippines",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Romania",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Laos",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "China",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "North Macedonia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Tonga",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "North Korea",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Seychelles",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "American Samoa",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Albania",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Taiwan",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Japan",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Colombia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Vietnam",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "South Korea",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Peru",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Singapore",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Indonesia",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Poland",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Myanmar",
+        "depression_category": "Bajo"
+    },
+    {
+        "country": "Brunei",
+        "depression_category": "Bajo"
+    }
+]

@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import json
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split, learning_curve, cross_val_score
@@ -311,3 +312,17 @@ except Exception as e:
     print(f"\nERROR en la evaluación final: {e}")
     print("No se pudo completar la evaluación detallada del modelo.")
     print("Verifica que todas las métricas se calcularon correctamente en los pasos anteriores.")
+
+# Guardar los resultados en un archivo JSON
+output_data = []
+for index, row in country_depression.iterrows():
+    output_data.append({
+        'country': row['country_name'],
+        'depression_category': row['category']
+    })
+
+output_file = 'depression_categories.json'
+with open(output_file, 'w') as f:
+    json.dump(output_data, f, indent=4)
+
+print(f"\nLos niveles de depresión por país y su categoría se han guardado en '{output_file}'.")
