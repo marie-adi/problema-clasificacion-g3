@@ -17,12 +17,6 @@ model = joblib.load("/home/abby/problema-clasificacion-g3/app/modelo_svm.pkl")
 df = pd.read_csv("/home/abby/problema-clasificacion-g3/Data/df_final.csv")
 df_2019 = df[df['year'] == 2019].copy()
 
-# Diccionario para decodificar la predicción
-decodificacion = {
-    0: "No presenta niveles significativos de depresión",
-    1: "Presenta niveles significativos de depresión"
-}
-
 @app.get("/", response_class=HTMLResponse)
 async def form(request: Request):
     # Pasamos la lista ordenada de países para sugerencias
@@ -44,9 +38,16 @@ async def predict(request: Request, entity: str = Form(...)):
         'dalys_eating_disorders', 'dalys_anxiety_disorders', 'entity'
     ], axis=1)
 
-    # Predicción y decodificación
+    # Predicción
     pred = model.predict(X_new)[0]
-    resultado = decodificacion.get(pred, f"Predicción desconocida (valor: {pred})")
+
+    # Decodificación usando if/else en lugar de diccionario
+    if pred == 1:
+        resultado = "No presenta niveles significativos de depresión"
+    elif pred == 0:
+        resultado = "Presenta niveles significativos de depresión"
+    else:
+        resultado = f"Predicción desconocida (valor: {pred})"
 
     # Si el modelo soporta probabilidades, las obtenemos
     if hasattr(model, 'predict_proba'):
